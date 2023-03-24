@@ -1,0 +1,56 @@
+.skip {
+    position: absolute;
+    top: -40px;
+}
+  
+  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+  
+.skip :focus{
+    position: relative;
+    top: 20px
+}
+  
+  /* Step 3: Write selector/rule property to style all elements when in focus*/
+  
+* :focus{
+    border: solid 2px;
+}
+
+.active{
+    background-color: lightseagreen;
+}
+.drop-button{
+    background-color: lightblue;
+}
+
+nav a{
+    color: darkorchid;
+    background-color: lightblue;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+#drop-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+#drop-content a{
+    display: block;
+}
+
+#drop-content a:hover{
+    background-color: blue;
+}
+
+.dropdown:hover #drop-content{
+    display: block;
+}
+
+.dropdown:hover .drop-button{
+    background-color: pink;
+}
