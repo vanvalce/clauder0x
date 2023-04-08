@@ -59,6 +59,15 @@ nav a{
     width: 250px;
 }
 
-/* #wallart{
-    width: 200px;
-} */
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#main img {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+}
