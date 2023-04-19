@@ -3,29 +3,40 @@
     top: -40px;
 }
   
-  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
   
 .skip :focus{
     position: relative;
     top: 20px
 }
+
   
-  /* Step 3: Write selector/rule property to style all elements when in focus*/
   
 * :focus{
     border: solid 2px;
 }
 
-.active{
-    background-color: lightseagreen;
+nav .active{
+    background-color: #C24127;
+    border: dotted 4px #FEBBAD;
+    font-weight: bold;
 }
 .drop-button{
-    background-color: lightblue;
+    background-color: #FEBBAD;
+}
+
+nav{
+    height: 80px;
+    padding-top: 30px;
 }
 
 nav a{
-    color: darkorchid;
-    background-color: lightblue;
+    color: #709DFF;
+    background-color: #FEBBAD;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .dropdown{
@@ -44,30 +55,216 @@ nav a{
 }
 
 .drop-content a:hover{
-    background-color: blue;
+    background-color: #FEBBAD;
+    border: dotted 4px #C24127;
 }
 
 .dropdown:hover .drop-content{
     display: block;
+    margin: 10px;
 }
 
 .dropdown:hover .drop-button{
     background-color: pink;
 }
 
-#bridge, #wallart{
-    width: 250px;
+body{
+    background-color: #709DFF;
 }
 
-#main {
+.hero {
+    background-image: url('/images/home/CloseFloral.JPG');
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    height: 200px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 30px #C24127;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .hero h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 20px rgb(42, 1, 60);
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+    border-radius: 40px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    background-color: #97C248;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+    box-shadow: 0px 0px 20px #97C248;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .gallery a {
+    display: flex;
+    justify-self: center;
+    width: 50%;
+    margin: 20px;
+    height: auto;;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px #FEBBAD;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #97C248;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 40px;
+    border: 5px solid #709DFF;
+    box-shadow: 0 0 30px #709DFF;
+    z-index: 999;
+    display: none;
+  }
+  
+  .popup:before {
+    content: attr(data-text);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  .popup.active {
+    display: block;
+  }
+  
+  
+  footer {
+    background-color: #f7d6e5;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+}
+  
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer li {
+    margin: 0 10px;
+}
+  
+footer a {
+    color: #fff;
+    background-color: #97C248;
+    border: solid #709DFF 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-shadow: 2px 2px 10px #000000;
+}
+  
+footer a:hover {
+    border: dotted #709DFF 5px;
+}
+  
+footer a:visited {
+    background-color: #709DFF;
 }
 
-#main img {
-    width: 30%;
-    height: auto;
-    margin: 20px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  nav {
+    height: 60px;
+    padding-top: 20px;
+  }
+  nav a {
+    font-size: 24px;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  .hero h1 {
+    font-size: 80px;
+  }
+  .hero h2 {
+    font-size: 40px;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .overlay {
+    transition: none;
+  }
 }

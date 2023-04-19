@@ -4,35 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <a href="#main" class="skip">Skip to main content</a>
+        <a href="#main" class="skip" tabindex="1">Skip to main content</a>
         <nav>
             <a class="active" href = "home.html">About</a>
             <div class = "dropdown">
                 <a class = "drop-button">Making</a>
                 <div class="drop-content">
-                    <a href = "food.html">Kitchen</a>
                     <a href = "ceramics.html">Studio</a>
                     <a href = "radio.html">Station</a>
-                    <a href = "art.html">Floor</a>
                 </div>
                 </div>
-            <a href = "contact.html">Contact</a></li>
         </nav>
     </header>
-    <main id = "main">
-        <img id="bridge" src = "images/Me1.JPG" alt = "">
-        <img id = "wallart" src = "images/Me2.JPG" alt = "">
-        <p>Junior at UofM-- BSI UX path and Arts&Ideas dual degree</p>
-    </main>
-    <footer>
-        <p> Clauder0x<br>
-        <a href="mailto:vanvalce@gmail.com>">Email</a></p>
-    </footer>
+    <main id="main">
+        <div class="hero">
+          <h1>Claude VanValkenburg</h1>
+          <h2>UX and Ceramics</h2>
+        </div>
+        <div class="gallery">
+            <a href="javascript:void(0)" class="popup-btn" data-text="At the University of Michigan, I am working towards a Bachelors of Science in Information, completing the User Experience Design path. I am also pursuing a dual degree with the Residential College Arts & Ideas in the Humanities major with a focus in ceramics. I enjoy considering how the user's experience can be impacted in the contexts of information technology, psychology and visual arts.">
+              <div class="image-container">
+                <img src="images/home/Wall.JPG" alt="Claude walks away with hands behind their back facing the wall of street art">
+                <div class="overlay">
+                  <div class="text">Academically...</div>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="popup-btn" data-text="A WCBN Student Radio Host. A long-time resident, officer, and cook at a co-operative house. A facilitator for weekly student meet-ups. A lover of collaging, crocheting, doodling, and all things creative.">
+              <div class="image-container">
+                <img src="images/home/Bridge.JPG" alt="Claude smiles in front of a London bridge... that is not falling down">
+                <div class="overlay">
+                  <div class="text">...and Otherwise...</div>
+                </div>
+              </div>
+            </a>
+          </div>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="mailto:vanvalce@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/claudia-vanvalkenburg-696159205/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/clauder0x/">Instagram</a></li>
+        </ul>
+      </footer>
+      
     <script src="js/portfolio.js"></script>
 </body>
 </html>

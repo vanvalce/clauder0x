@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/ceramics.css">
     <title>TITLE</title>
 </head>
 <body>
     <header>
-        <a href="#main" class="skip">Skip to main content</a>
+        <a href="#main" class="skip" tabindex="1">Skip to main content</a>
         <nav>
-            <a href = "home.html">About</a>
-            <div class = "dropdown">
-            <button class="active" id = "drop-title" >Making
-                    <!-- add java for hover state dropdown in button tag -->
-                </button>
-                <div id="drop-content">
-                    <a href = "food.html">Kitchen</a>
-                    <a href = "ceramics.html">Studio</a>
-                    <a href = "radio.html">Station</a>
-                    <a href = "art.html">Floor</a>
-                </div>
-                </div>
-            <a href = "contact.html">Contact</a></li>
-        </nav>
+            <a href="home.html">About</a>
+            <div class="dropdown">
+                <button class="active drop-button" id="drop-title">Making</button>
+
+              <!-- <button class="active" id="drop-title">Making</button> -->
+              <div id="drop-content">
+                <a href="ceramics.html">Studio</a>
+                <a href="radio.html">Station</a>
+              </div>
+            </div>
+          </nav>
     </header>
     <main id = "main">
         <div class = "gallery">
-            <img src="images/Ceramics1.jpeg" alt="">
-            <img src="images/Ceramics2.jpeg" alt="">
-            <img src="images/Ceramics3.JPG" alt="">
-            <img src="images/Ceramics4.JPG" alt="">
-            <img src="images/Ceramics5.JPG" alt="">
-            <img src="images/Ceramics6.JPG" alt="">
-            <img src="images/Ceramics7.JPG" alt="">
-            <img src="images/Ceramics8.JPG" alt="">
-            <img src="images/Ceramics9.JPG" alt="">
-            <img src="images/Ceramics10.JPG" alt="">
-            <img src="images/Ceramics11.JPG" alt="">
+            <div class="mainpics">
+                <img src="images/ceramics/Ceramics1.jpeg" alt="Claude smiles up while hard at work at the potters wheel" id="bigsmirk">
+                <img src="images/ceramics/Ceramics2.jpeg" alt="Claude waving to the camera at the potters wheel" id="bigwave">
+                <div id="bigwave-caption">Check out some of my latest ceramic work below!</div>
+            </div>
+            <div class="image-grid">
+                <img src="images/ceramics/rakuribbon.JPG" alt="A small raku-fired matcha caddy with a red ribbon bow" class="grid-image">
+                <img src="images/ceramics/risottoset.JPG" alt="A green dinnerware set including a casserole dish, bowls, and salt shakers" class="grid-image">
+                <img src="images/ceramics/oceancups.JPG" alt="A cup duo with the glossy teal glaze dripping over the matte pink underneath" class="grid-image">
+                <img src="images/ceramics/teaset.JPG" alt="A teal modern take on the Japanese Tea Ceremony set" class="grid-image">
+                <img src="images/ceramics/rakucopper.JPG" alt="A large, reflective raku-fired concave vessel" class="grid-image">
+                <img src="images/ceramics/future.JPG" alt="A spherical futuristic stirrup spout vessel with tan and navy brush strokes" class="grid-image">
+                <img src="images/ceramics/cahun.JPG" alt="A set of three wonky and way black pieces inspired by works of Claude Cahun" class="grid-image">
+                <img src="images/ceramics/rakucupset.JPG" alt="Matching raku-fired cup and saucer with bold glaze crackle patterns" class="grid-image">
+                <img src="images/ceramics/teabowls.JPG" alt="Three iterations of a matcha tea bowl stacked on top of each other" class="grid-image">
+                <img src="images/ceramics/rakubowls.JPG" alt="A pair of colorfully-glazed raku-fired bowls" class="grid-image">
+                <img src="images/ceramics/ripbowls.JPG" alt="Shard remnants of five soup bowls with childhood phrases stamped on the surface" class="grid-image">
+                <img src="images/ceramics/kidneybeans.JPG" alt="A set of funky maroon bean-shaped dishes on long legs" class="grid-image">
+                <img src="images/ceramics/blueguys.JPG" alt="Nine modern egyptian paste shabti figures interlocked" class="grid-image">
+                <img src="images/ceramics/pastelset.JPG" alt="A set of pastel dishes" class="grid-image">
+                <img src="images/ceramics/present.JPG" alt="An organically-shaped modern stirrup spout vessel with tan and navy brush strokes" class="grid-image">
+            </div>
+            <div id="modal-container">
+                <div id="modal-content">
+                    <img id="modal-image" src="" alt="">
+                </div>
+            </div>
         </div>
         <p></p>
     </main>
     <footer>
-        <p> Clauder0x<br>
-        <a href="mailto:vanvalce@gmail.com>">Email</a></p>
-    </footer>
+        <ul>
+          <li><a href="mailto:vanvalce@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/claudia-vanvalkenburg-696159205/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/clauder0x/">Instagram</a></li>
+        </ul>
+      </footer>
     <script src="js/portfolio.js"></script>
 </body>
 </html>
